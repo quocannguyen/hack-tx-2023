@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { recommendSongs } from './actions/recommendSongs'
 
-export default function Home() {
+export default async function Home() {
+  const recommendedSongs = await recommendSongs("acoustic", 10)
+  console.log(recommendSongs)
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
