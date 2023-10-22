@@ -3,7 +3,7 @@
   flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: #A7C2D1;
-  height: 100vh;  
+  height: 100vh;
 }
 
 .header {
@@ -14,13 +14,13 @@
   align-items: center;
 }
 
-.header nav{
+.header nav {
   display: flex;
   flex-direction: row;
   color: white;
 }
 
-.header a{
+.header a {
   margin: 0rem 15rem;
 }
 
@@ -29,38 +29,65 @@
   /* Add styles for the net worth section */
 }
 
-.spending {
-  display: flex;
-  justify-content: right;
+.spendingContainer {
   margin-top: 20px;
-  color: #3a3a3a;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
-.spending h4{
+.spendingHeader {
   color: #152D92;
   font-size: 32px;
   font-weight: 200;
-  line-height: 48px; 
-
+  line-height: 48px;
 }
-.spending p{
-font-feature-settings: 'clig' off, 'liga' off;
-font-size: 16px;
-font-weight: 200;
-line-height: 26px;
 
+.spending {
+  color: #3a3a3a;
+}
+
+.spending p {
+  width: 700px;
+  height: 163px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 26px;
 }
 
 .playlist {
+  display: flex;
   margin-top: 20px;
-  background-color: #f4f4f4;
+  background-color: #A7C2D1;
+  padding: 10px;
+  justify-content: center;
+}
+.playlist p{
+  color: #152D92;
+font-size: 32px;
+font-weight: 500;
+line-height: 48px; /* 133.333% */
+}
+
+.investment{
+  display: inline-flex;
+padding: 49px 31px 52px 29px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.investment h2 {
+  display: flex;
+  margin-top: 20px;
+  background-color: #A7C2D1 ;
   padding: 10px;
 }
 
-.investment {
-  margin-top: 20px;
-  background-color: #dcdcdc;
-  padding: 10px;
+.investment p {
+    margin-top: 20px;
+    background-color: #A7C2D1;
+    padding: 10px;
 }
 
 .choices {
