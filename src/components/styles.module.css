@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 2rem 2rem;
+    justify-content: right;
+    align-items: center;
+    background: #A7C2D1;
+}
+
+.navbar_home, .navbar_signup{
+    color: #E57BA1;
+    
+}
+
+.linkContianer {
+    display:flex;
+    align-items: center;
+}
+
+
+.separator{
+margin: 0 10px;
+color: #fff;
+}

@@ -5,6 +5,7 @@ import { AppContext } from "@/context/appcontext"
 import { signOut } from "next-auth/react"
 import Link from "next/link"
 import { useContext } from "react"
+import styles from "./styles.module.css"
 
 export default function Navbar() {
     const appContext = useContext(AppContext)
@@ -16,13 +17,18 @@ export default function Navbar() {
 
     return (
         <header>
-            <nav className="bg-black flex justify-between px-4 py-6 shadow-xl">
-                <div>{appContext?.currentUser?.email}</div>
-                <div className="flex gap-4">
-                    <Link href="/">Home</Link>
+            <nav className={styles.navbar}>
+                <div className={styles.linkContainer}>
+                    <Link href="/" className={styles.navbar_home}>Home
+                    </Link>
+                    <span className={styles.separator}>|</span>
                     {
-                        appContext?.currentUser ? <button onClick={signOutHandler}>Sign Out</button>
-                        : <Link href="/signup">Sign Up</Link>
+                        appContext?.currentUser ? 
+                        <button onClick={signOutHandler}>Sign Out</button>
+                        :
+                        <Link href="/signup" className={styles.navbar_signup}>
+                            Sign Up
+                        </Link>
                     }
                 </div>
             </nav>

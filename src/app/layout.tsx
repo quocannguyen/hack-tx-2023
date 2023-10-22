@@ -4,7 +4,6 @@ import './globals.css'
 import { AppContextProvider } from '@/context/appcontext'
 import { getCurrentUser } from './actions/getCurrentUser'
 import Navbar from '@/components/navbar'
-import TrackPlayer from '@/components/trackplayer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +24,6 @@ export default async function RootLayout({
       <body className={inter.className}>
         <AppContextProvider user={currentUser}>
           <Navbar/>
-          <TrackPlayer trackId="2D3z17LBMJ2HEHeBFFjTLi"/>
           {children}
         </AppContextProvider>
       </body>
