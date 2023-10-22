@@ -1,0 +1,57 @@
+/* styles/login.module.css */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #A7C2D1;;
+}
+
+.card {
+    width: 300px;
+    background: #E57BA1;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20%;
+}
+
+.icon {
+    align-self: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    color: white;
+    margin: 2px;
+}
+.icon img{
+    width: 119.386px;
+    height: 97.851px;
+    flex-shrink: 0;
+}
+
+.button {
+    padding: 10px;
+    background: #A7C2D1;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+    color: white;
+}
+
+.link {
+    align-self: center;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}

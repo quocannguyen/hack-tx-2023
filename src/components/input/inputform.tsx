@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEventHandler } from "react";
 import Input from "./input";
+import styles from "./styles.module.css"
 
 interface InputProps {
     id: string,
@@ -17,12 +18,10 @@ export default function InputForm({
 }) {
 
     return (
-        <form 
+        <form className={styles.input_form}
             // className={}
             onSubmit={onSubmit}>
-            <section 
-                // className=""
-            >
+            <section className={styles.sectionForm}>
                 {inputs.map(({id, value}) => (
                     <Input 
                         key={id}

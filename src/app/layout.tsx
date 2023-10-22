@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { AppContextProvider } from '@/context/appcontext'
 import { getCurrentUser } from './actions/getCurrentUser'
+import Navbar from '@/components/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AppContextProvider user={currentUser}>
+          <Navbar/>
           {children}
         </AppContextProvider>
       </body>
